@@ -9,7 +9,8 @@
 	<br>
 	<br>
         LANG : EN
-
+	<br>
+	ISOWebBotGroup
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #005290;
@@ -24,7 +25,7 @@
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
-		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+		embedded_svc.settings.language = 'en'; //For example, enter 'en' or 'en-US'
 
 		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
@@ -46,17 +47,17 @@
 
 		embedded_svc.init(
 			'https://albert-5f-dev-ed.develop.my.salesforce.com',
-			'https://albert-5f-dev-ed.develop.my.site.com/ESWMessagingWebISOBot1711554853785vforce',
+			'https://albert-5f-dev-ed.develop.my.site.com/servicebot',
 			gslbBaseURL,
 			'00DQy0000060ZzA',
-			'ISO_Bot_Embedded_Chat',
+			'ISOWebBotGroup',
 			{
 				baseLiveAgentContentURL: 'https://c.la1-core1.sfdc-cehfhs.salesforceliveagent.com/content',
-				deploymentId: '572Qy0000045wNH',
-				buttonId: '573Qy00000170h3',
+				deploymentId: '572Qy0000041zOv',
+				buttonId: '573Qy00000178jT',
 				baseLiveAgentURL: 'https://d.la1-core1.sfdc-cehfhs.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IQy0000000kVtMAI_18e80d57d5c',
-				isOfflineSupportEnabled: true
+				eswLiveAgentDevName: 'ISOWebBotGroup',
+				isOfflineSupportEnabled: false
 			}
 		);
 	};
@@ -71,8 +72,7 @@
 	} else {
 		initESW('https://service.force.com');
 	}
-</script>
-    
+</script>  
     
     </body>
 </html>
