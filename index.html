@@ -28,7 +28,7 @@
 		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
-		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+		//embedded_svc.settings.loadingText = 'en'; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
 		// Settings for Chat
@@ -45,17 +45,17 @@
 
 		embedded_svc.init(
 			'https://albert-5f-dev-ed.develop.my.salesforce.com',
-			'https://albert-5f-dev-ed.develop.my.site.com/servicebot',
+			'https://albert-5f-dev-ed.develop.my.site.com/ESWMessagingWebISOBot1711554853785vforce',
 			gslbBaseURL,
 			'00DQy0000060ZzA',
-			'ISO_Group',
+			'ISO_Bot_Embedded_Chat',
 			{
 				baseLiveAgentContentURL: 'https://c.la1-core1.sfdc-cehfhs.salesforceliveagent.com/content',
-				deploymentId: '572Qy0000041zOv',
-				buttonId: '573Qy00000170h3',
+				deploymentId: '572Qy0000045wNH',
+				buttonId: '573Qy0000015pu9',
 				baseLiveAgentURL: 'https://d.la1-core1.sfdc-cehfhs.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'ISO_Group',
-				isOfflineSupportEnabled: true
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IQy0000000kVtMAI_18e80d57d5c',
+				isOfflineSupportEnabled: false
 			}
 		);
 	};
