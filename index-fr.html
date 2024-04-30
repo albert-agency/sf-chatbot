@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>ISO Chatbot [test system]</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    </head>
+    <body>
+
+        Hi, welcome to our bot!
+	<br/>
+	<br/>
+        LANG : EN
+	<br/>
+	ISO sandbox : testalbert 
+	<br/>
+	ISO Web bot embedded chat deployment
+	<br/>
+	30.04.2024
+	Version 5
+	<br/>
+	no pre-chat
+	<br/>
+	<style type='text/css'>
+		.embeddedServiceHelpButton .helpButton .uiButton {
+			background-color: #D02C24;
+			font-family: "Arial", sans-serif;
+		}
+		.embeddedServiceHelpButton .helpButton .uiButton:focus {
+			outline: 1px solid #D02C24;
+		}
+	</style>
+
+
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #919191;
+		font-family: "Arial", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #919191;
+	}
+</style>
+
+<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+<script type='text/javascript'>
+	var initESW = function(gslbBaseURL) {
+		embedded_svc.settings.displayHelpButton = true; //Or false
+
+		embedded_svc.settings.language = 'fr'; //For example, enter 'en' or 'en-US'
+		embedded_svc.settings.defaultMinimizedText = 'Chat with ISO'; //(Defaults to Chat with an Expert)
+		embedded_svc.settings.disabledMinimizedText = 'Chat not available'; //(Defaults to Agent Offline)		
+		embedded_svc.settings.loadingText = 'Welcome to ISO chatbot'; //(Defaults to Loading)
+
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+
+		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+
+		// Settings for Chat
+		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+			// Returns a valid button ID.
+		//};
+		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
+
+		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+		embedded_svc.settings.entryFeature = 'LiveAgent';
+
+		embedded_svc.init(
+			'https://iso--alberttest.sandbox.my.salesforce.com',
+			'https://iso--alberttest.sandbox.my.salesforce-sites.com/isoWebBotSite',
+			gslbBaseURL,
+			'00DFS000001ArIb',
+			'ISO_Web_bot_embedded_chat_deployment',
+			{
+				baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-ei37dk.salesforceliveagent.com/content',
+				deploymentId: '572FS000000Ebfd',
+				buttonId: '573FS0000005QOT',
+				baseLiveAgentURL: 'https://d.la2s-core1.sfdc-ei37dk.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IFS0000004UHF2A2_18e85689262',
+				isOfflineSupportEnabled: false
+			}
+		);
+	};
+
+	if (!window.embedded_svc) {
+		var s = document.createElement('script');
+		s.setAttribute('src', 'https://iso--alberttest.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.onload = function() {
+			initESW(null);
+		};
+		document.body.appendChild(s);
+	} else {
+		initESW('https://service.force.com');
+	}
+</script>
+
+
+    </body>
+</html>
