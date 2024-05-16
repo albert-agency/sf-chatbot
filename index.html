@@ -43,7 +43,8 @@
 			height: 120px;
 			width: 120px !important;
 			background: transparent !important;
-			max-width: unset;
+			min-width: unset;
+			padding: 0;
 		}
 
 		.embeddedServiceHelpButton .helpButton .uiButton:focus {
@@ -63,6 +64,14 @@
 		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-item,
 		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-itemOptionIsClicked {
 			text-align: center;
+		}
+
+		.embeddedServiceHelpButton .helpButton .helpButtonEnabled:hover::before,
+		.embeddedServiceHelpButton .helpButton .helpButtonEnabled:focus::before {
+			content: inherit;
+			background-color: transparent;
+			opacity: 1;
+			transform: rotate(10deg) scale(1.05);
 		}
 
 		/*Chat Modal*/
@@ -116,11 +125,11 @@
 		}
 
 		/* Small bot avatar inside the chat window*/
-		.embeddedServiceLiveAgentStateChatItem .isLightningOutContext .avatar::after {
+		/*		.embeddedServiceLiveAgentStateChatItem .isLightningOutContext .avatar::after {
 			content: url('./Chatbotlady.svg');
 			width: 24px;
 			height: 24px;
-		}
+		}*/
 	</style>
 
 
