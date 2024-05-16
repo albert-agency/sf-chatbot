@@ -32,6 +32,12 @@
 			display: block !important;
 		}
 
+		.embeddedServiceHelpButton .helpButton {
+			bottom: 30px;
+			right: 100px;
+			height: auto !important;
+		}
+
 		.embeddedServiceHelpButton .helpButton .uiButton {
 			border-radius: 50%;
 			height: 148px;
@@ -41,14 +47,24 @@
 			outline: 1px solid #D02C24;
 		}
 
+		.embeddedServiceHelpButton .helpButton .uiButton span {
+			display: none;
+		}
+
+		.embeddedServiceHelpButton .helpButton .uiButton::before {
+			content: none;
+		}
+
 		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-item,
 		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-itemOptionIsClicked {
 			text-align: center;
 		}
 
 		/*Chat Modal*/
-		.dockableContainer.showDockableContainer {
-			bottom: 100px;
+		.embeddedServiceSidebar.layout-docked .dockableContainer {
+			height: 50%;
+			right: 100px;
+			bottom: 200px;
 		}
 
 		embeddedservice-chat-header.chatHeaderBranding {
