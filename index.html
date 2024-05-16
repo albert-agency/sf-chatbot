@@ -38,12 +38,12 @@
 			height: auto !important;
 		}
 
-
 		.embeddedServiceHelpButton .helpButton .uiButton {
 			border-radius: 50%;
 			height: 120px;
 			width: 120px !important;
 			background: transparent !important;
+			max-width: unset;
 		}
 
 		.embeddedServiceHelpButton .helpButton .uiButton:focus {
@@ -55,7 +55,9 @@
 		}
 
 		.embeddedServiceHelpButton .helpButton .uiButton::before {
-			content: none !important;
+			content: url('./Chatbotlady.svg');
+			width: 120px;
+			height: 120px;
 		}
 
 		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-item,
@@ -113,7 +115,7 @@
 			display: none;
 		}
 
-		/*bot small avatar inside the chat window*/
+		/* Small bot avatar inside the chat window*/
 		.embeddedServiceLiveAgentStateChatItem .isLightningOutContext .avatar::after {
 			content: url('./Chatbotlady.svg');
 			width: 24px;
