@@ -59,6 +59,7 @@
 			content: url('./Chatbotlady.svg');
 			width: 120px;
 			height: 120px;
+			transition: all .5 ease;
 		}
 
 		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-item,
@@ -74,12 +75,13 @@
 			transform: rotate(10deg) scale(1.05);
 		}
 
-		/*Chat Modal*/
+		/*Chat Modal window*/
 		.embeddedServiceSidebar.layout-docked .dockableContainer {
 			height: 45%;
 			width: 25%;
 			right: 100px;
-			bottom: 200px;
+			bottom: 160px;
+			border-radius: 30px;
 		}
 
 		embeddedservice-chat-header.chatHeaderBranding {
@@ -95,7 +97,7 @@
 			fill: black;
 		}
 
-		/*LNG Selection options*/
+		/*Language Selection options*/
 		.embeddedServiceLiveAgentStateChatItem.chatMessage button span {
 			color: rgb(234, 0, 30);
 		}
@@ -113,7 +115,17 @@
 			border-color: rgb(234, 0, 30) !important;
 		}
 
-		/*User chat bubble*/
+		.embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:hover,
+		.embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:active,
+		.embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:hover:active,
+		.embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:focus,
+		.embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:focus:hover {
+			color: rgb(234, 0, 30) !important;
+			font-weight: bold;
+			background-color: rgb(255 174 184 / 52%);
+		}
+
+		/*User chat bubble message*/
 		.chat-content.chasitor {
 			background: rgb(255 174 184 / 52%) !important;
 			color: #000 !important;
@@ -127,6 +139,7 @@
 		.embeddedServiceLiveAgentStateChatInputFooter .chasitorControls .uiInput {
 			border-color: transparent !important;
 			border-top: 1px solid rgb(223 223 223) !important;
+			padding: 15px 20px;
 		}
 
 		/* Menu ham icon on the input chat text box*/
@@ -140,6 +153,27 @@
 			width: 24px;
 			height: 24px;
 		}*/
+
+		/*End Chat window*/
+		/*Confirm End Chat btn*/
+		.embeddedServiceSidebarButton:not(:disabled):focus,
+		.embeddedServiceSidebarButton:not(:disabled):hover {
+			background-color: rgb(234, 0, 30);
+		}
+
+		.button.dialogButton.dialog-button-0.uiButton.embeddedServiceSidebarButton {
+			background-color: rgb(234, 0, 30);
+		}
+
+		/*Go Back btn*/
+		.embeddedServiceSidebarButton.uiButton--inverse .label {
+			color: rgb(234, 0, 30);
+		}
+
+		/*Close Chat btn*/
+		button.endChatButton.closeChatButton.uiButton--default.uiButton.embeddedServiceSidebarButton {
+			background: rgb(234, 0, 30);
+		}
 	</style>
 
 
