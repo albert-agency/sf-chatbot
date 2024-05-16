@@ -38,9 +38,13 @@
 			right: 100px;
 			height: auto !important;
 			background: transparent;
-			border-color: transparent;
+			border: none;
 			border-radius: 50%;
 			width: 120px !important;
+			min-width: unset;
+			padding: 0;
+			box-shadow: none;
+			overflow: visible;
 		}
 
 		.embeddedServiceHelpButton .helpButton .uiButton {
@@ -63,6 +67,7 @@
 		.embeddedServiceHelpButton .helpButton .uiButton::before,
 		button.sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI::before {
 			content: url('./Chatbotlady.svg');
+			display: block;
 			width: 120px;
 			height: 120px;
 			transition: all .5s ease;
@@ -74,11 +79,17 @@
 		}
 
 		.embeddedServiceHelpButton .helpButton .helpButtonEnabled:hover::before,
-		.embeddedServiceHelpButton .helpButton .helpButtonEnabled:focus::before {
+		.embeddedServiceHelpButton .helpButton .helpButtonEnabled:focus::before,
+		button.sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI:hover::before {
 			content: url('./Chatbotlady.svg');
 			background-color: transparent;
 			opacity: 1;
 			transform: rotate(10deg) scale(1.05);
+		}
+
+		/*Minimized btn*/
+		.embeddedServiceSidebarMinimizedDefaultUI .content {
+			display: none;
 		}
 
 		/*Chat Modal window*/
