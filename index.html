@@ -68,7 +68,7 @@
 
 		.embeddedServiceHelpButton .helpButton .helpButtonEnabled:hover::before,
 		.embeddedServiceHelpButton .helpButton .helpButtonEnabled:focus::before {
-			content: inherit;
+			content: url('./Chatbotlady.svg');
 			background-color: transparent;
 			opacity: 1;
 			transform: rotate(10deg) scale(1.05);
@@ -115,8 +115,18 @@
 
 		/*User chat bubble*/
 		.chat-content.chasitor {
-			background: rgb(255 174 184 / 52%);
-			color: #000;
+			background: rgb(255 174 184 / 52%) !important;
+			color: #000 !important;
+		}
+
+		/* Input chat */
+		.embeddedServiceLiveAgentStateChatInputFooter.chasitorInputWrapper {
+			background-color: transparent;
+		}
+
+		.embeddedServiceLiveAgentStateChatInputFooter .chasitorControls .uiInput {
+			border-color: transparent !important;
+			border-top: 1px solid rgb(223 223 223) !important;
 		}
 
 		/* Menu ham icon on the input chat text box*/
