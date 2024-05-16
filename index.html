@@ -55,11 +55,12 @@
 			display: none !important;
 		}
 
-		.embeddedServiceHelpButton .helpButton .uiButton::before {
+		.embeddedServiceHelpButton .helpButton .uiButton::before,
+		button.sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI::before {
 			content: url('./Chatbotlady.svg');
 			width: 120px;
 			height: 120px;
-			transition: all .5 ease;
+			transition: all .5s ease;
 		}
 
 		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-item,
@@ -106,6 +107,11 @@
 			border-color: rgb(234, 0, 30);
 		}
 
+		.embeddedServiceLiveAgentStateChatItem.chatMessage button:hover,
+		.embeddedServiceLiveAgentStateChatItem.chatMessage button:hover:focus {
+			background: rgb(234, 0, 30);
+		}
+
 		/*Menu bot Options*/
 		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-item {
 			color: rgb(234, 0, 30);
@@ -113,6 +119,10 @@
 
 		.embeddedServiceLiveAgentStateChatItem .chatContent ul.rich-menu-items li {
 			border-color: rgb(234, 0, 30) !important;
+		}
+
+		.embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item {
+			transition: all .5s ease;
 		}
 
 		.embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:hover,
@@ -142,17 +152,21 @@
 			padding: 15px 20px;
 		}
 
+		.embeddedServiceLiveAgentStateChatInputFooter .chasitorControls .uiInput::placeholder {
+			color: rgba(0, 0, 0, .3);
+		}
+
 		/* Menu ham icon on the input chat text box*/
 		.footerMenuWrapper {
 			display: none;
 		}
 
 		/* Small bot avatar inside the chat window*/
-		/*		.embeddedServiceLiveAgentStateChatItem .isLightningOutContext .avatar::after {
-			content: url('./Chatbotlady.svg');
+		.embeddedServiceLiveAgentStateChatItem .isLightningOutContext .avatar::after {
+			content: url('./Chatbotlady_small.svg');
 			width: 24px;
 			height: 24px;
-		}*/
+		}
 
 		/*End Chat window*/
 		/*Confirm End Chat btn*/
