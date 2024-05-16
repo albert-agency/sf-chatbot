@@ -87,6 +87,15 @@
 			transform: rotate(10deg) scale(1.05);
 		}
 
+		/*Minimize top bar icon --set to be on top of the bottom avatar icon*/
+		button.minimizeButton {
+			position: absolute;
+			right: 0;
+			bottom: -1160%;
+			width: 120px;
+			height: 120px;
+		}
+
 		/*Minimized btn*/
 		.embeddedServiceSidebarMinimizedDefaultUI .content {
 			display: none;
@@ -99,6 +108,7 @@
 			right: 100px;
 			bottom: 160px;
 			border-radius: 30px;
+			overflow: visible;
 		}
 
 		embeddedservice-chat-header.chatHeaderBranding {
@@ -109,7 +119,12 @@
 			color: transparent;
 		}
 
-		/*Top minimize and close btns*/
+		/*Top minimize btn*/
+		.slds-icon-utility-minimize-window svg.slds-icon.slds-icon-text-default.slds-icon_x-small {
+			fill: transparent;
+		}
+
+		/*Top close btn*/
 		svg.slds-icon.slds-icon-text-default.slds-icon_x-small {
 			fill: black;
 		}
@@ -180,8 +195,12 @@
 		/* Small bot avatar inside the chat window*/
 		.embeddedServiceLiveAgentStateChatItem .isLightningOutContext .avatar::after {
 			content: url('./Chatbotlady_small.svg');
-			width: 24px;
-			height: 24px;
+			position: absolute;
+			left: 0;
+		}
+
+		.avatar.iconAvatar.agentInitial.agentIconColor0 {
+			padding: 0;
 		}
 
 		/*End Chat window*/
