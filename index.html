@@ -94,6 +94,11 @@
 			bottom: -1160%;
 			width: 120px;
 			height: 120px;
+			cursor: pointer;
+		}
+
+		button.minimizeButton::before {
+			content: none;
 		}
 
 		/*Minimized btn*/
@@ -119,6 +124,10 @@
 			color: transparent;
 		}
 
+		.embeddedServiceSidebar .sidebarBody {
+			border-radius: 30px;
+		}
+
 		/*Top minimize btn*/
 		.slds-icon-utility-minimize-window svg.slds-icon.slds-icon-text-default.slds-icon_x-small {
 			fill: transparent;
@@ -127,6 +136,7 @@
 		/*Top close btn*/
 		svg.slds-icon.slds-icon-text-default.slds-icon_x-small {
 			fill: black;
+			cursor: pointer;
 		}
 
 		/*Language Selection options*/
