@@ -10,7 +10,7 @@
 
 <body>
 
-	Hi, welcome to our bot! KURT TEST
+	Hi, welcome to our bot!
 	<br />
 	<br />
 	LANG : EN
@@ -38,9 +38,12 @@
 			height: auto !important;
 		}
 
+
 		.embeddedServiceHelpButton .helpButton .uiButton {
 			border-radius: 50%;
-			height: 148px;
+			height: 120px;
+			width: 120px !important;
+			background: transparent !important;
 		}
 
 		.embeddedServiceHelpButton .helpButton .uiButton:focus {
@@ -48,11 +51,11 @@
 		}
 
 		.embeddedServiceHelpButton .helpButton .uiButton span {
-			display: none;
+			display: none !important;
 		}
 
 		.embeddedServiceHelpButton .helpButton .uiButton::before {
-			content: none;
+			content: none !important;
 		}
 
 		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-item,
@@ -62,7 +65,8 @@
 
 		/*Chat Modal*/
 		.embeddedServiceSidebar.layout-docked .dockableContainer {
-			height: 50%;
+			height: 45%;
+			width: 25%;
 			right: 100px;
 			bottom: 200px;
 		}
@@ -75,8 +79,45 @@
 			color: transparent;
 		}
 
+		/*Top minimize and close btns*/
 		svg.slds-icon.slds-icon-text-default.slds-icon_x-small {
 			fill: black;
+		}
+
+		/*LNG Selection options*/
+		.embeddedServiceLiveAgentStateChatItem.chatMessage button span {
+			color: rgb(234, 0, 30);
+		}
+
+		.embeddedServiceLiveAgentStateChatButtonItem {
+			border-color: rgb(234, 0, 30);
+		}
+
+		/*Menu bot Options*/
+		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-item {
+			color: rgb(234, 0, 30);
+		}
+
+		.embeddedServiceLiveAgentStateChatItem .chatContent ul.rich-menu-items li {
+			border-color: rgb(234, 0, 30) !important;
+		}
+
+		/*User chat bubble*/
+		.chat-content.chasitor {
+			background: rgb(255 174 184 / 52%);
+			color: #000;
+		}
+
+		/* Menu ham icon on the input chat text box*/
+		.footerMenuWrapper {
+			display: none;
+		}
+
+		/*bot small avatar inside the chat window*/
+		.embeddedServiceLiveAgentStateChatItem .isLightningOutContext .avatar::after {
+			content: url('./Chatbotlady.svg');
+			width: 24px;
+			height: 24px;
 		}
 	</style>
 
