@@ -24,10 +24,17 @@
 	<br />
 	no pre-chat
 	<br />
+
+
 	<style type='text/css'>
+		/*Bottom Btn Avatar*/
+		.embeddedServiceHelpButton {
+			display: block !important;
+		}
+
 		.embeddedServiceHelpButton .helpButton .uiButton {
-			background-color: #D02C24;
-			font-family: "Arial", sans-serif;
+			border-radius: 50%;
+			height: 148px;
 		}
 
 		.embeddedServiceHelpButton .helpButton .uiButton:focus {
@@ -37,6 +44,23 @@
 		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-item,
 		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-itemOptionIsClicked {
 			text-align: center;
+		}
+
+		/*Chat Modal*/
+		.dockableContainer.showDockableContainer {
+			bottom: 100px;
+		}
+
+		embeddedservice-chat-header.chatHeaderBranding {
+			background-color: transparent;
+		}
+
+		embeddedservice-chat-header.chatHeaderBranding h2 {
+			color: transparent;
+		}
+
+		svg.slds-icon.slds-icon-text-default.slds-icon_x-small {
+			fill: black;
 		}
 	</style>
 
