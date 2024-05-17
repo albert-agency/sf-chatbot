@@ -34,8 +34,8 @@
 
 		.embeddedServiceHelpButton .helpButton .uiButton {
 			border-radius: 50%;
-			height: 120px;
-			width: 120px !important;
+			height: unset;
+			width: unset !important;
 			background: transparent !important;
 			min-width: unset;
 			padding: 0;
@@ -74,6 +74,7 @@
 		button.sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI::before {
 			content: '';
 			background-image: url('./Chatbotlady.svg');
+			background-size: cover;
 			display: block;
 			width: 80px;
 			height: 80px;
@@ -86,6 +87,7 @@
 		button.sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI:hover::before {
 			content: '';
 			background-image: url('./Chatbotlady.svg');
+			background-size: cover;
 			background-color: transparent;
 			opacity: 1;
 			transform: rotate(10deg) scale(1.05);
