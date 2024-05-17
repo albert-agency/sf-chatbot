@@ -63,7 +63,7 @@
 		.embeddedServiceHelpButton .helpButton,
 		button.sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI {
 			width: auto;
-			bottom: 3%;
+			bottom: 3% !important;
 			right: 3%;
 			height: auto !important;
 			background: transparent;
@@ -132,19 +132,19 @@
 			overflow: visible;
 		}
 
-		@media (max-width: 800px) {
-			.embeddedServiceSidebar.layout-docked .dockableContainer {
-				width: unset;
-			}
-		}
-
 		@media (max-width: 1024px) {
 			.embeddedServiceSidebar.layout-docked .dockableContainer {
-				height: 80%;
-				width: 50%;
+				height: 80% !important;
+				width: 80%;
 				right: 0;
 				bottom: 0;
 				box-shadow: none;
+			}
+		}
+
+		@media (max-width: 800px) {
+			.embeddedServiceSidebar.layout-docked .dockableContainer {
+				width: unset;
 			}
 		}
 
