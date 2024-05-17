@@ -32,21 +32,6 @@
 			display: block !important;
 		}
 
-		.embeddedServiceHelpButton .helpButton,
-		button.sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI {
-			bottom: 30px;
-			right: 100px;
-			height: auto !important;
-			background: transparent;
-			border: none;
-			border-radius: 50%;
-			width: 120px !important;
-			min-width: unset;
-			padding: 0;
-			box-shadow: none;
-			overflow: visible;
-		}
-
 		.embeddedServiceHelpButton .helpButton .uiButton {
 			border-radius: 50%;
 			height: 120px;
@@ -64,24 +49,43 @@
 			display: none !important;
 		}
 
-		.embeddedServiceHelpButton .helpButton .uiButton::before,
-		button.sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI::before {
-			content: url('./Chatbotlady.svg');
-			display: block;
-			width: 120px;
-			height: 120px;
-			transition: all .5s ease;
-		}
-
 		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-item,
 		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-itemOptionIsClicked {
 			text-align: center;
 		}
 
+		/*Avatar btn with minimized btn too*/
+		.embeddedServiceHelpButton .helpButton,
+		button.sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI {
+			bottom: 30px;
+			right: 100px;
+			height: auto !important;
+			background: transparent;
+			border: none;
+			border-radius: 50%;
+			width: 120px !important;
+			min-width: unset;
+			padding: 0;
+			box-shadow: none;
+			overflow: visible;
+		}
+
+		.embeddedServiceHelpButton .helpButton .uiButton::before,
+		button.sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI::before {
+			content: '';
+			background-image: url('./Chatbotlady.svg');
+			display: block;
+			width: 80px;
+			height: 80px;
+			transition: all .5s ease;
+		}
+
+		/*on hover*/
 		.embeddedServiceHelpButton .helpButton .helpButtonEnabled:hover::before,
 		.embeddedServiceHelpButton .helpButton .helpButtonEnabled:focus::before,
 		button.sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI:hover::before {
-			content: url('./Chatbotlady.svg');
+			content: '';
+			background-image: url('./Chatbotlady.svg');
 			background-color: transparent;
 			opacity: 1;
 			transform: rotate(10deg) scale(1.05);
