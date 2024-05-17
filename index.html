@@ -63,11 +63,12 @@
 			background: transparent;
 			border: none;
 			border-radius: 50%;
-			/*width: 120px !important;*/
+			width: 80px !important;
 			min-width: unset;
 			padding: 0;
 			box-shadow: none;
 			overflow: visible;
+			visibility: visible !important;
 		}
 
 		.embeddedServiceHelpButton .helpButton .uiButton::before,
@@ -99,10 +100,10 @@
 		/*Minimize top bar icon --set to be on top of the bottom avatar icon*/
 		button.minimizeButton {
 			position: absolute;
-			right: 0;
-			bottom: -30%;
-			width: 120px;
-			height: 150px;
+			right: 6%;
+			bottom: -25%;
+			width: 100px;
+			height: 120px;
 			cursor: pointer;
 		}
 
@@ -120,9 +121,19 @@
 			height: 45%;
 			width: 25%;
 			right: 100px;
-			bottom: 160px;
+			bottom: 120px;
 			border-radius: 30px;
 			overflow: visible;
+		}
+
+		@media (max-width: 800px) {
+			.embeddedServiceSidebar.layout-docked .dockableContainer {
+				height: 80%;
+				width: unset;
+				right: 0;
+				bottom: 0;
+				box-shadow: none;
+			}
 		}
 
 		embeddedservice-chat-header.chatHeaderBranding {
