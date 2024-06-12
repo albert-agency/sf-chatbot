@@ -1,0 +1,54 @@
+<html>
+
+<head>
+	<title>ISO Chatbot [test system]</title>
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1"
+	>
+</head>
+
+<body>
+
+	Hi, welcome to our bot!
+	<br />
+	<br />
+	LANG : EN
+	<br />
+	ISO sandbox : testalbert
+	<br />
+	ISO Website Chatbot [embedded chat deployment with messaging]
+	<br />
+	12.06.2024
+	Version 1
+	<br />
+	no pre-chat
+	<br />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DFS000001ArIb',
+				'Iso_Website_Chatbot_Deployment',
+				'https://iso--alberttest.sandbox.my.site.com/ESWIsoWebsiteChatbotDe1718084818257',
+				{
+					scrt2URL: 'https://iso--alberttest.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://iso--alberttest.sandbox.my.site.com/ESWIsoWebsiteChatbotDe1718084818257/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+
+
+</body>
+
+</html>
