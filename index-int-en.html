@@ -303,34 +303,34 @@
 			embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 			embedded_svc.settings.entryFeature = 'LiveAgent';
 
-			embedded_svc.init(
-				'https://iso--alberttest.sandbox.my.salesforce.com',
-				'https://iso--alberttest.sandbox.my.salesforce-sites.com/isoWebBotSite',
-				gslbBaseURL,
-				'00DFS000001ArIb',
-				'ISO_Web_bot_embedded_chat_deployment',
-				{
-					baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-ei37dk.salesforceliveagent.com/content',
-					deploymentId: '572FS000000Ebfd',
-					buttonId: '573FS0000005QOT',
-					baseLiveAgentURL: 'https://d.la2s-core1.sfdc-ei37dk.salesforceliveagent.com/chat',
-					eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IFS0000004UHF2A2_18e85689262',
-					isOfflineSupportEnabled: false
-				}
-			);
-		};
+		embedded_svc.init(
+			'https://iso--chatbot.sandbox.my.salesforce.com',
+			'https://iso--chatbot.sandbox.my.salesforce-sites.com/isoWebBotSite',
+			gslbBaseURL,
+			'00DFS000001jkPV',
+			'ISO_Web_bot_embedded_chat_deployment',
+			{
+				baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-ei37dk.salesforceliveagent.com/content',
+				deploymentId: '572FS000000T6TR',
+				buttonId: '573FS000000Abaz',
+				baseLiveAgentURL: 'https://d.la2s-core1.sfdc-ei37dk.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IFS000000Fr5d2AC_1904e0b25c8',
+				isOfflineSupportEnabled: false
+			}
+		);
+	};
 
-		if ( !window.embedded_svc ) {
-			var s = document.createElement( 'script' );
-			s.setAttribute( 'src', 'https://iso--alberttest.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js' );
-			s.onload = function () {
-				initESW( null );
-			};
-			document.body.appendChild( s );
-		} else {
-			initESW( 'https://service.force.com' );
-		}
-	</script>
+	if (!window.embedded_svc) {
+		var s = document.createElement('script');
+		s.setAttribute('src', 'https://iso--chatbot.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.onload = function() {
+			initESW(null);
+		};
+		document.body.appendChild(s);
+	} else {
+		initESW('https://service.force.com');
+	}
+</script>
 
 
 </body>
