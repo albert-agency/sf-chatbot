@@ -27,16 +27,16 @@
 		}
 
 		.embeddedServiceHelpButton .helpButton .uiButton {
-			border-radius: 50%;
-			height: unset;
+			border-radius: 50% !important;
+			height: unset !important;
 			width: unset !important;
 			background: transparent !important;
-			min-width: unset;
-			padding: 0;
+			min-width: unset !important;
+			padding: 0 !important;
 		}
 
 		.embeddedServiceHelpButton .helpButton .uiButton:focus {
-			outline: 1px solid #D02C24;
+			outline: 1px solid #D02C24 !important;
 		}
 
 		.embeddedServiceHelpButton .helpButton .uiButton span {
@@ -45,66 +45,66 @@
 
 		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-item,
 		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-itemOptionIsClicked {
-			text-align: center;
+			text-align: center !important;
 		}
 
 		.embeddedServiceHelpButton .helpButton .helpButtonEnabled.no-hover:hover::before,
 		.embeddedServiceHelpButton .helpButton .helpButtonEnabled.no-hover:focus::before {
-			display: block;
+			display: block !important;
 		}
 
 		/*Avatar btn with minimized btn too*/
 		.embeddedServiceHelpButton .helpButton,
 		button.sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI {
-			width: auto;
+			width: auto !important;
 			bottom: 3% !important;
-			right: 3%;
+			right: 3% !important;
 			height: auto !important;
-			background: transparent;
-			border: none;
+			background: transparent !important;
+			border: none !important;
 			border-radius: 50%;
-			min-width: unset;
-			padding: 0;
-			box-shadow: none;
-			overflow: visible;
+			min-width: unset !important;
+			padding: 0 !important;
+			box-shadow: none !important;
+			overflow: visible !important;
 			visibility: visible !important;
 		}
 
 		.embeddedServiceHelpButton .helpButton .uiButton::before,
 		button.sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI::before {
-			content: '';
-			background-image: url('./Chatbotlady.svg');
-			background-size: cover;
-			display: block;
-			width: 80px;
-			height: 80px;
-			transition: all .5s ease;
+			content: '' !important;
+			background-image: url('./Chatbotlady.svg') !important;
+			background-size: cover !important;
+			display: block !important;
+			width: 80px !important;
+			height: 80px !important;
+			transition: all .5s ease !important;
 		}
 
 		/*on hover*/
 		.embeddedServiceHelpButton .helpButton .helpButtonEnabled:hover::before,
 		.embeddedServiceHelpButton .helpButton .helpButtonEnabled:focus::before,
 		button.sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI:hover::before {
-			content: '';
-			background-image: url('./Chatbotlady.svg');
-			background-size: cover;
-			background-color: transparent;
-			opacity: 1;
-			width: 80px;
-			height: 80px;
-			position: relative;
-			transform: rotate(10deg) scale(1.05);
+			content: '' !important;
+			background-image: url('./Chatbotlady.svg') !important;
+			background-size: cover !important;
+			background-color: transparent !important;
+			opacity: 1 !important;
+			width: 80px !important;
+			height: 80px !important;
+			position: relative !important;
+			transform: rotate(10deg) scale(1.05) !important;
 		}
 
 		/*Minimize top bar icon --set to be on top of the bottom avatar icon*/
 		button.minimizeButton {
-			position: absolute;
-			right: -20%;
-			top: 100%;
-			width: 50%;
-			height: 50%;
-			cursor: pointer;
-			outline: none;
+			position: absolute !important;
+			right: -20% !important;
+			top: 100% !important;
+			width: 50% !important;
+			height: 50% !important;
+			cursor: pointer !important;
+			outline: none !important;
 		}
 
 		button.minimizeButton::before {
@@ -113,45 +113,45 @@
 
 		/*Minimized btn*/
 		.embeddedServiceSidebarMinimizedDefaultUI .content {
-			display: none;
+			display: none !important;
 		}
 
 		/*Chat Modal window*/
 		.embeddedServiceSidebar.layout-docked .dockableContainer {
-			height: 80%;
-			width: 25%;
-			right: 100px;
-			bottom: 120px;
-			border-radius: 30px;
-			overflow: visible;
+			height: 80% !important;
+			width: 25% !important;
+			right: 100px !important;
+			bottom: 120px !important;
+			border-radius: 30px !important;
+			overflow: visible !important;
 		}
 
 		@media (max-width: 1024px) {
 			.embeddedServiceSidebar.layout-docked .dockableContainer {
 				height: 80% !important;
-				width: 80%;
-				right: 0;
-				bottom: 0;
-				box-shadow: none;
+				width: 80% !important;
+				right: 0 !important;
+				bottom: 0 !important;
+				box-shadow: none !important;
 			}
 		}
 
 		@media (max-width: 800px) {
 			.embeddedServiceSidebar.layout-docked .dockableContainer {
-				width: unset;
+				width: unset !important;
 			}
 		}
 
 		embeddedservice-chat-header.chatHeaderBranding {
-			background-color: transparent;
+			background-color: transparent !important;
 		}
 
 		embeddedservice-chat-header.chatHeaderBranding h2 {
-			color: transparent;
+			color: transparent !important;
 		}
 
 		.embeddedServiceSidebar .sidebarBody {
-			border-radius: 30px;
+			border-radius: 30px !important;
 		}
 
 		header.sidebarHeader {
@@ -160,32 +160,32 @@
 
 		/*Top minimize btn*/
 		.slds-icon-utility-minimize-window svg.slds-icon.slds-icon-text-default.slds-icon_x-small {
-			fill: transparent;
+			fill: transparent !important;
 		}
 
 		/*Top close btn*/
 		svg.slds-icon.slds-icon-text-default.slds-icon_x-small {
-			fill: black;
-			cursor: pointer;
+			fill: black !important;
+			cursor: pointer !important;
 		}
 
 		/*Language Selection options*/
 		.embeddedServiceLiveAgentStateChatItem.chatMessage button span {
-			color: rgb(234, 0, 30);
+			color: rgb(234, 0, 30) !important;
 		}
 
 		.embeddedServiceLiveAgentStateChatButtonItem {
-			border-color: rgb(234, 0, 30);
+			border-color: rgb(234, 0, 30) !important;
 		}
 
 		.embeddedServiceLiveAgentStateChatItem.chatMessage button:hover,
 		.embeddedServiceLiveAgentStateChatItem.chatMessage button:hover:focus {
-			background: rgb(234, 0, 30);
+			background: rgb(234, 0, 30) !important;
 		}
 
 		/*Menu bot Options*/
 		.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-item {
-			color: rgb(234, 0, 30);
+			color: rgb(234, 0, 30) !important;
 		}
 
 		.embeddedServiceLiveAgentStateChatItem .chatContent ul.rich-menu-items li {
@@ -193,7 +193,7 @@
 		}
 
 		.embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item {
-			transition: all .5s ease;
+			transition: all .5s ease !important;
 		}
 
 		.embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:hover,
@@ -202,8 +202,8 @@
 		.embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:focus,
 		.embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:focus:hover {
 			color: rgb(234, 0, 30) !important;
-			font-weight: bold;
-			background-color: rgb(255 174 184 / 52%);
+			font-weight: bold !important;
+			background-color: rgb(255 174 184 / 52%) !important;
 		}
 
 		/*User chat bubble message*/
@@ -214,54 +214,54 @@
 
 		/* Input chat */
 		.embeddedServiceLiveAgentStateChatInputFooter.chasitorInputWrapper {
-			background-color: transparent;
+			background-color: transparent !important;
 		}
 
 		.embeddedServiceLiveAgentStateChatInputFooter .chasitorControls .uiInput {
 			border-color: transparent !important;
 			border-top: 1px solid rgb(223 223 223) !important;
-			padding: 15px 20px;
+			padding: 15px 20px !important;
 		}
 
 		.embeddedServiceLiveAgentStateChatInputFooter .chasitorControls .uiInput::placeholder {
-			color: rgba(0, 0, 0, .3);
+			color: rgba(0, 0, 0, .3) !important;
 		}
 
 		/* Menu ham icon on the input chat text box*/
 		.footerMenuWrapper {
-			display: none;
+			display: none !important;
 		}
 
 		/* Small bot avatar inside the chat window*/
 		.embeddedServiceLiveAgentStateChatItem .isLightningOutContext .avatar::after {
-			content: url('./Chatbotlady_small.svg');
-			position: absolute;
-			left: 0;
+			content: url('./Chatbotlady_small.svg') !important;
+			position: absolute !important;
+			left: 0 !important;
 		}
 
 		.avatar.iconAvatar.agentInitial.agentIconColor0 {
-			padding: 0;
+			padding: 0 !important;
 		}
 
 		/*End Chat window*/
 		/*Confirm End Chat btn*/
 		.embeddedServiceSidebarButton:not(:disabled):focus,
 		.embeddedServiceSidebarButton:not(:disabled):hover {
-			background-color: rgb(234, 0, 30);
+			background-color: rgb(234, 0, 30) !important;
 		}
 
 		.button.dialogButton.dialog-button-0.uiButton.embeddedServiceSidebarButton {
-			background-color: rgb(234, 0, 30);
+			background-color: rgb(234, 0, 30) !important;
 		}
 
 		/*Go Back btn*/
 		.embeddedServiceSidebarButton.uiButton--inverse .label {
-			color: rgb(234, 0, 30);
+			color: rgb(234, 0, 30) !important;
 		}
 
 		/*Close Chat btn*/
 		button.endChatButton.closeChatButton.uiButton--default.uiButton.embeddedServiceSidebarButton {
-			background: rgb(234, 0, 30);
+			background: rgb(234, 0, 30) !important;
 		}
 	</style>
 	<!-- // end chatbot custom styles -->
@@ -275,14 +275,14 @@
 		var initESW = function ( gslbBaseURL ) {
 			embedded_svc.settings.displayHelpButton = true; //Or false
 
-			
+
 			embedded_svc.settings.language = 'en_US'; //For example, enter 'fr' or 'en_US'
-			embedded_svc.settings.extraPrechatFormDetails = [{  
-			    "label":"BotLanguage",
-			    "value":"en_US",
-			    "transcriptFields":[ "BotLanguage__c" ],
-			    "displayToAgent":false
-			}];			
+			embedded_svc.settings.extraPrechatFormDetails = [{
+				"label": "BotLanguage",
+				"value": "en_US",
+				"transcriptFields": ["BotLanguage__c"],
+				"displayToAgent": false
+			}];
 
 			embedded_svc.settings.defaultMinimizedText = 'Chat with ISO'; //(Defaults to Chat with an Expert)
 			embedded_svc.settings.disabledMinimizedText = 'Chat not available'; //(Defaults to Agent Offline)
@@ -306,36 +306,36 @@
 			embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 			embedded_svc.settings.entryFeature = 'LiveAgent';
 
-		embedded_svc.init(
-			'https://iso.my.salesforce.com',
-			'https://iso.my.salesforce-sites.com/isoWebBotSite',
-			gslbBaseURL,
-			'00Db0000000ILy0',
-			'PROD_ISO_Website_Chatbot_Service_Deployment',
-			{
-				baseLiveAgentContentURL: 'https://c.la1-core1.sfdc-ei37dk.salesforceliveagent.com/content',
-				deploymentId: '572Vj000000Akcf',
-				buttonId: '573Vj0000003wyj',
-				baseLiveAgentURL: 'https://d.la1-core1.sfdc-ei37dk.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'PROD_ISO_Website_Chatbot',
-				isOfflineSupportEnabled: false
-			}
-		);
-	};
-
-	if (!window.embedded_svc) {
-		var s = document.createElement('script');
-		s.setAttribute('src', 'https://iso.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-		s.onload = function() {
-			initESW(null);
+			embedded_svc.init(
+				'https://iso.my.salesforce.com',
+				'https://iso.my.salesforce-sites.com/isoWebBotSite',
+				gslbBaseURL,
+				'00Db0000000ILy0',
+				'PROD_ISO_Website_Chatbot_Service_Deployment',
+				{
+					baseLiveAgentContentURL: 'https://c.la1-core1.sfdc-ei37dk.salesforceliveagent.com/content',
+					deploymentId: '572Vj000000Akcf',
+					buttonId: '573Vj0000003wyj',
+					baseLiveAgentURL: 'https://d.la1-core1.sfdc-ei37dk.salesforceliveagent.com/chat',
+					eswLiveAgentDevName: 'PROD_ISO_Website_Chatbot',
+					isOfflineSupportEnabled: false
+				}
+			);
 		};
-		document.body.appendChild(s);
-	} else {
-		initESW('https://service.force.com');
-	}
-</script>
-<!-- // scripts for chatbot -->
-	
+
+		if ( !window.embedded_svc ) {
+			var s = document.createElement( 'script' );
+			s.setAttribute( 'src', 'https://iso.my.salesforce.com/embeddedservice/5.0/esw.min.js' );
+			s.onload = function () {
+				initESW( null );
+			};
+			document.body.appendChild( s );
+		} else {
+			initESW( 'https://service.force.com' );
+		}
+	</script>
+	<!-- // scripts for chatbot -->
+
 </body>
 
 </html>
